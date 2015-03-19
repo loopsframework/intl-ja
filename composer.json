@@ -24,6 +24,6 @@
         "bin/loops-intl-ja-createziptable.sh"
     ],
     "scripts": {
-        "post-package-install": [ "./bin/loops-intl-ja-createziptable.sh" ]
+        "post-install-cmd": [ "whoami" ]
     }
 }
