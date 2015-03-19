@@ -1,0 +1,29 @@
+{
+    "name": "loopsframework/intl-ja",
+    "version": "dev-master",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "authors": [
+        {
+            "name": "Lukas Prasuhn",
+            "email": "lukas@m-t.com",
+            "homepage": "http://www.m-t.com"
+        }
+    ],
+    "extra": {
+        "component": {
+            "name": "loops-intl-ja",
+            "scripts": [
+                "postal_resolver.js"
+            ]
+        }
+    },
+    "bin": [
+        "bin/loops-intl-ja-createziptable.sh"
+    ],
+    "scripts": {
+        "post-create-project-cmd": [ "./bin/loops-intl-ja-createziptable.sh" ]
+    }
+}
