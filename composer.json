@@ -24,6 +24,6 @@
         "bin/loops-intl-ja-createziptable.sh"
     ],
     "scripts": {
-        "post-create-project-cmd": [ "./bin/loops-intl-ja-createziptable.sh" ]
+        "post-package-install": [ "./bin/loops-intl-ja-createziptable.sh" ]
     }
 }
