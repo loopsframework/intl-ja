@@ -21,7 +21,7 @@
         }
     },
     "suggest": {
-        "RobLoach/components": "Component Installer for Composer (automatically installs postal_resolver.js)"
+        "robloach/component-installer": "Component Installer for Composer (automatically installs postal_resolver.js)"
     },
     "bin": [
         "bin/loops-intl-ja-createziptable.sh"
