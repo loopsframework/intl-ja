@@ -43,11 +43,11 @@ if(!is_dir($apppath) || !is_dir($cachepath) || !file_exists("$apppath/$config"))
     exit;
 }
 
-//get the loops/phalcon application object + some services
-$application = Loops::run(realpath($apppath), $cachepath, $config, $boot, TRUE);
+//get the phalcon di + some services
+$di = Loops::run(realpath($apppath), $cachepath, $config, $boot, TRUE);
 
-$db          = $application->getDI()->get('db');
-$config      = $application->getDI()->get('config');
+$db          = $di->get('db');
+$config      = $di->get('config');
 
 
 //present database setting to user
